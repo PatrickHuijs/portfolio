@@ -40,6 +40,7 @@ const swiperPrive = new Swiper('.swiper.is-prive', {
 
 
 	
+<script>
 const rangeSlider = document.querySelector('.fs-rangeslider_input');
 const tabsViews = document.querySelectorAll('.tabs_view-wrp');
 const tabsContentItems = document.querySelectorAll('.tabs_content_item');
@@ -47,9 +48,6 @@ const contactTabs = document.querySelectorAll('.tab_link-contact');
 const textColorElements = document.querySelectorAll('.tabs_view-wrp');
 const tabLinks = document.querySelectorAll('.tab_link');
 const checkboxBackgroundElements = document.querySelectorAll('.tabs_content_item-checkbox');
-const testimonialItems = document.querySelectorAll('.testimonial_item');
-const overlaySections = document.querySelectorAll('.overlay_section');
-const priveGalleryItems = document.querySelectorAll('.prive_gallery-item');
 
 rangeSlider.addEventListener('input', function() {
   const value = parseInt(this.value);
@@ -75,16 +73,7 @@ rangeSlider.addEventListener('input', function() {
     		link.style.color = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-6');
 	    	link.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-6');
   		});
-  		testimonialItems.forEach(item => {
-    		item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-4');
-		  });
-      overlaySections.forEach(section => {
-    		section.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
-		  });
-      priveGalleryItems.forEach(item => {
-    		item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-4');
-  		});
-      break;    
+      break;
     case 2:
       tabsViews.forEach(view => {
         view.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-4');
@@ -104,15 +93,6 @@ rangeSlider.addEventListener('input', function() {
       tabLinks.forEach(link => {
     		link.style.color = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-6');
 	    	link.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-6');
-  		});
-  		testimonialItems.forEach(item => {
-    		item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
-		  });
-      overlaySections.forEach(section => {
-    		section.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-4');
-		  });
-      priveGalleryItems.forEach(item => {
-    		item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
   		});
       break;
     case 3:
@@ -134,16 +114,7 @@ rangeSlider.addEventListener('input', function() {
       tabLinks.forEach(link => {
     		link.style.color = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-6');
 	    	link.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-6');
-  		});
-  		testimonialItems.forEach(item => {
-    		item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-4');
-		  });
-      overlaySections.forEach(section => {
-    		section.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-5');
-		  });
-      priveGalleryItems.forEach(item => {
-    		item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-4');
-  		});   
+  		});      
       break;
     case 4:
       tabsViews.forEach(view => {
@@ -165,19 +136,33 @@ rangeSlider.addEventListener('input', function() {
     		link.style.color = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
 	    	link.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
   		});
-  		testimonialItems.forEach(item => {
-    		item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-7');
-		  });
-      overlaySections.forEach(section => {
-    		section.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-6');
-		  });
-      priveGalleryItems.forEach(item => {
-    		item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-7');
-  		});
       break;
     case 5:
       tabsViews.forEach(view => {
         view.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-7');
+        view.style.color = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
+			});
+      tabsContentItems.forEach(item => {
+        item.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-6');
+      });
+      contactTabs.forEach(contact => {
+        contact.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
+				contact.style.color = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-7');      
+				contact.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');      
+      });
+      checkboxBackgroundElements.forEach(checkbox => {
+        checkbox.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-7');
+      });
+      tabLinks.forEach(link => {
+    		link.style.color = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
+	    	link.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
+  		});      
+      break;
+    default:
+      // Default state or any other behavior for other values
+      break;
+  }
+});       view.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-7');
         view.style.color = getComputedStyle(document.documentElement).getPropertyValue('--swatch--color-3');
 			});
       tabsContentItems.forEach(item => {
