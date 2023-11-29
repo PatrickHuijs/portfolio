@@ -1,5 +1,4 @@
-<!-- Swiper testimonial -->
-<script>
+// Swiper testimonial
 const swiperTestimonial = new Swiper('.swiper.is-testimonial', {
   // Optional parameters
   loop: false,
@@ -17,11 +16,10 @@ const swiperTestimonial = new Swiper('.swiper.is-testimonial', {
       snapOnRelease: true
   }
 });
-</script>
 
 
-<!-- Swiper About image gallery -->
-<script>
+
+// Swiper About image gallery
 const swiperPrive = new Swiper('.swiper.is-prive', {
   // Optional parameters
   loop: false,
@@ -39,10 +37,8 @@ const swiperPrive = new Swiper('.swiper.is-prive', {
       snapOnRelease: true
   }
 });
-</script>
-	
 
-<script>
+	
 const rangeSlider = document.querySelector('.fs-rangeslider_input');
 const tabsViews = document.querySelectorAll('.tabs_view-wrp');
 const tabsContentItems = document.querySelectorAll('.tabs_content_item');
@@ -213,4 +209,4 @@ rangeSlider.addEventListener('input', function() {
       break;
   }
 });
-</script>
+
