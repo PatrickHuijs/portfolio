@@ -1,3 +1,47 @@
+<!-- Swiper testimonial -->
+<script>
+const swiperTestimonial = new Swiper('.swiper.is-testimonial', {
+  // Optional parameters
+  loop: false,
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  grabCursor: true,
+  speed: 800,
+
+
+  // And if we need scrollbar
+     scrollbar: {
+    el: ".swiper-drag-wrapper.is-testimonial",
+      draggable: true,
+      dragClass: "swiper-drag.is-testimonial",
+      snapOnRelease: true
+  }
+});
+</script>
+
+
+<!-- Swiper About image gallery -->
+<script>
+const swiperPrive = new Swiper('.swiper.is-prive', {
+  // Optional parameters
+  loop: false,
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  grabCursor: true,
+  speed: 800,
+
+
+  // And if we need scrollbar
+     scrollbar: {
+    el: ".swiper-drag-wrapper.is-prive",
+      draggable: true,
+      dragClass: "swiper-drag.is-prive",
+      snapOnRelease: true
+  }
+});
+</script>
+	
+
 <script>
 const rangeSlider = document.querySelector('.fs-rangeslider_input');
 const tabsViews = document.querySelectorAll('.tabs_view-wrp');
